@@ -1,0 +1,127 @@
+@import "variables";
+
+.proyectos {
+  background: @color-fondo;
+}
+
+.proyectos__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: @espacio-sm;
+  margin-top: @espacio-lg;
+}
+
+.proyectos__tarjeta {
+  background: @color-fondo-2;
+  border: 1px solid @color-borde;
+  border-radius: @radio-borde * 2;
+}
+
+.proyectos__tarjeta:hover {
+  border-color: @color-acento;
+}
+
+.proyectos__tarjeta--destacada {
+  grid-column: span 2;
+  border-color: @color-acento;
+}
+
+.proyectos__tarjeta-inner {
+  padding: @espacio-md;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: @espacio-sm;
+}
+
+.proyectos__cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.proyectos__numero {
+  font-family: @fuente-codigo;
+  font-size: @tamanio-xl;
+  font-weight: 800;
+  color: @color-borde;
+  line-height: 1;
+}
+
+.proyectos__badge {
+  font-family: @fuente-codigo;
+  font-size: 11px;
+  color: @color-acento;
+  border: 1px solid @color-acento;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.proyectos__nombre {
+  font-size: @tamanio-lg;
+  color: @color-texto;
+  font-weight: 800;
+}
+
+.proyectos__descripcion {
+  font-size: @tamanio-base;
+  color: @color-texto-suave;
+  line-height: 1.8;
+  flex: 1;
+}
+
+.proyectos__tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.proyectos__tag {
+  font-family: @fuente-codigo;
+  font-size: 11px;
+  color: @color-acento;
+  background: @color-fondo;
+  border: 1px solid @color-borde;
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+
+.proyectos__enlaces {
+  display: flex;
+  gap: @espacio-sm;
+  padding-top: @espacio-sm;
+  border-top: 1px solid @color-borde;
+  margin-top: auto;
+}
+
+.proyectos__link {
+  font-family: @fuente-codigo;
+  font-size: @tamanio-sm;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.proyectos__link--demo {
+  color: @color-acento;
+}
+
+.proyectos__link--repo {
+  color: @color-texto-suave;
+}
+
+.proyectos__link--repo:hover {
+  color: @color-texto;
+}
+
+@media (max-width: 768px) {
+  .proyectos__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proyectos__tarjeta--destacada {
+    grid-column: span 1;
+  }
+}

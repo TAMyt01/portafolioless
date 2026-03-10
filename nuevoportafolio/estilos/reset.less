@@ -1,0 +1,44 @@
+@import "variables";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: @tamanio-base;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: @color-fondo;
+  color: @color-texto;
+  font-family: @fuente-cuerpo;
+  line-height: 1.7;
+}
+
+a {
+  color: @color-acento;
+  text-decoration: none;
+}
+
+a:hover {
+  color: @color-acento-2;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: @fuente-cuerpo;
+}

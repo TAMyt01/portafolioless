@@ -1,0 +1,115 @@
+@import "variables";
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: @color-fondo;
+}
+
+.hero__contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: @espacio-lg;
+  align-items: center;
+  width: 100%;
+  padding: @espacio-lg 0;
+}
+
+.hero__nombre {
+  font-size: @tamanio-xxl;
+  margin-bottom: @espacio-md;
+  margin-top: @espacio-xs;
+  color: @color-texto;
+}
+
+.hero__descripcion {
+  font-size: @tamanio-md;
+  color: @color-texto-suave;
+  margin-bottom: @espacio-md;
+}
+
+.hero__botones {
+  display: flex;
+  gap: @espacio-sm;
+  margin-bottom: @espacio-md;
+}
+
+.hero__social {
+  display: flex;
+  gap: @espacio-md;
+}
+
+.hero__social-link {
+  font-family: @fuente-codigo;
+  font-size: @tamanio-sm;
+  color: @color-texto-suave;
+}
+
+.hero__social-link:hover {
+  color: @color-acento;
+}
+
+.hero__terminal {
+  background: @color-fondo-2;
+  border: 1px solid @color-borde;
+  border-radius: @radio-borde * 2;
+  width: 100%;
+  max-width: 460px;
+}
+
+.hero__terminal-header {
+  padding: @espacio-xs @espacio-sm;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid @color-borde;
+}
+
+.hero__terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.hero__terminal-dot--rojo     { background: #ff5f57; }
+.hero__terminal-dot--amarillo { background: #febc2e; }
+.hero__terminal-dot--verde    { background: #28c840; }
+
+.hero__terminal-titulo {
+  font-family: @fuente-codigo;
+  font-size: @tamanio-sm;
+  color: @color-texto-suave;
+  margin: 0 auto;
+}
+
+.hero__terminal-cuerpo {
+  padding: @espacio-md;
+  font-family: @fuente-codigo;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+
+
+.t-gris     { color: @color-texto-suave; }
+.t-azul     { color: @color-acento; }
+.t-verde    { color: #16a34a; }
+.t-amarillo { color: #d97706; }
+.t-acento   { color: @color-acento; }
+
+
+
+@media (max-width: 768px) {
+  .hero__contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__nombre {
+    font-size: @tamanio-xl;
+  }
+
+  .hero__visual {
+    display: none;
+  }
+}

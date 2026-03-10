@@ -1,0 +1,52 @@
+@import "variables";
+@import "reset";
+@import "tipografia";
+@import "hero";
+@import "sobremi";
+@import "proyectos";
+@import "habilidades";
+@import "contacto";
+
+.contenedor {
+  max-width: @ancho-maximo;
+  margin: 0 auto;
+  padding: 0 @espacio-md;
+}
+
+.seccion {
+  padding: @espacio-xl 0;
+}
+
+.seccion-titulo {
+  font-size: @tamanio-xl;
+  margin-bottom: @espacio-lg;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: @radio-borde;
+  font-family: @fuente-codigo;
+  font-size: @tamanio-sm;
+  font-weight: 700;
+}
+
+.btn--primario {
+  background: @color-acento;
+  color: @color-fondo;
+}
+
+.btn--primario:hover {
+  background: @color-acento-2;
+  color: #fff;
+}
+
+.btn--secundario {
+  border: 1px solid @color-borde;
+  color: @color-texto;
+}
+
+.btn--secundario:hover {
+  border-color: @color-acento;
+  color: @color-acento;
+}

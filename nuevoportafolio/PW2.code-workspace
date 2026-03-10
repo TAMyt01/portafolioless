@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "FrameworksGrupoI",
+			"path": "../PaginaconBootstrap/.vscode/FrameworksGrupoI"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PW2"
+	}
+}

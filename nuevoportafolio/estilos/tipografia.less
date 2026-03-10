@@ -1,0 +1,39 @@
+@import "variables";
+
+h1, h2, h3, h4 {
+  font-family: @fuente-titulo;
+  font-weight: 800;
+  line-height: 1.1;
+  color: @color-texto;
+}
+
+h1 { font-size: @tamanio-xxl; }
+h2 { font-size: @tamanio-xl; }
+h3 { font-size: @tamanio-lg; }
+h4 { font-size: @tamanio-md; }
+
+p {
+  font-size: @tamanio-base;
+  color: @color-texto-suave;
+  line-height: 1.8;
+}
+
+.texto-codigo {
+  font-family: @fuente-codigo;
+  font-size: @tamanio-sm;
+  color: @color-acento;
+}
+
+.etiqueta {
+  font-family: @fuente-codigo;
+  font-size: @tamanio-sm;
+  color: @color-acento;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: @espacio-sm;
+}
+
+.resaltado {
+  color: @color-acento;
+}
